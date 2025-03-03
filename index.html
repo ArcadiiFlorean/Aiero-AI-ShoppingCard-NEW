@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +35,9 @@
               </li>
               <li class="info-bar__list-item">
                 <span class="info-bar__label">Email:</span>
-                <a href="#" class="info-bar__link">arcadiiflorean789@gmail.com</a>
+                <a href="#" class="info-bar__link"
+                  >arcadiiflorean789@gmail.com</a
+                >
               </li>
             </ul>
           </div>
@@ -62,8 +63,10 @@
         </div>
         <div class="nav-bar">
           <div class="nav-items">
-            <button class="side-button"></button>
-            <img class="logo" src="./img/Aiero-Logo.svg" alt="Logo" />
+            <button class="side-button">
+              <img src="./imag/Side menu icon.svg" alt="" />
+            </button>
+            <img class="logo" src="./imag/Aiero-Logo.svg" alt="Logo" />
           </div>
           <ul class="nav-links">
             <li class="nav-item">
@@ -167,89 +170,94 @@
           <ul class="action-links">
             <li class="action-item">
               <a href="#basket" class="action-link">
-                <img src="./img/basket_icon.svg" alt="basket" />
+                <img src="./imag/basket_icon.svg" alt="basket" />
               </a>
             </li>
             <li class="action-item">
               <a href="#search" class="action-link">
-                <img src="./img/search.svg" alt="basket" />
+                <img src="./imag/search.svg" alt="basket" />
               </a>
             </li>
-            <button class="action-button" type="button" onclick="window.location.href='#search';">
+            <button
+              class="action-button"
+              type="button"
+              onclick="window.location.href='#search';"
+            >
               Get in Touch
             </button>
           </ul>
         </div>
       </div>
-
     </header>
-<!--------Table------>
-<section class="section-shoping-card">
-    <div class="container">
-      <div class="shoping-section">
-        <table class="cart">
-          <thead class="cart__header">
-            <tr class="cart__row">
-              <th class="cart__cell cart__cell--header">Products</th>
-              <th class="cart__cell cart__cell--header">Price</th>
-              <th class="cart__cell cart__cell--header">Quantity</th>
-              <th class="cart__cell cart__cell--header">Total</th>
-            </tr>
-          </thead>
-          <tbody id="cart-body" class="cart__body">
-            <tr class="cart__row">
-              <td class="cart__cell cart__cell--product">
-                <div class="cart__product-info">
-                  <img
-                    class="cart__product-img"
-                    src="./img/Produs_img.png"
-                    alt="produs_img"
-                  />
+    <!--------Table------>
+    <section class="section-shoping-card">
+      <div class="container">
+        <div class="shoping-section">
+          <table class="cart">
+            <thead class="cart__header">
+              <tr class="cart__row">
+                <th class="cart__cell cart__cell--header">Products</th>
+                <th class="cart__cell cart__cell--header">Price</th>
+                <th class="cart__cell cart__cell--header">Quantity</th>
+                <th class="cart__cell cart__cell--header">Total</th>
+          
+              </tr>
+              <td class="colspan" colspan="5">
+                <hr />
+              </td>
+            </thead>
+            <tbody id="cart-body" class="cart__body">
+              <tr class="cart__row">
+                <td class="cart__cell cart__cell--product">
+                  <div class="cart__product-info">
+                    <img
+                      class="cart__product-img"
+                      src="./imag/Produs_img.png"
+                      alt="produs_img"
+                    />
 
-                  <div class="cart__product-details">
-                    <span class="cart__product-name">Sneakers REDdy XL</span>
-                    <div class="cart__rating" onclick="setRating(this)">
-                      <span class="cart__star">&#9733;</span>
-                      <span class="cart__star">&#9733;</span>
-                      <span class="cart__star">&#9733;</span>
-                      <span class="cart__star">&#9733;</span>
-                      <span class="cart__star">&#9733;</span>
+                    <div class="cart__product-details">
+                      <span class="cart__product-name">Sneakers REDdy XL</span>
+                      <div class="cart__rating" onclick="setRating(this)">
+                        <span class="cart__star">&#9733;</span>
+                        <span class="cart__star">&#9733;</span>
+                        <span class="cart__star">&#9733;</span>
+                        <span class="cart__star">&#9733;</span>
+                        <span class="cart__star">&#9733;</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </td>
-              <td class="cart__cell cart__cell--price">$150.00</td>
-              <td class="cart__cell cart__cell--quantity">
-                <button
-                  class="cart__button cart__button--decrease"
-                  onclick="updateQuantity(this, -1)"
+                </td>
+                <td class="cart__cell cart__cell--price">$150.00</td>
+                <td class="cart__cell cart__cell--quantity">
+                  <div class="card__cell__btn">
+                    <button
+                      class="cart__button cart__button--decrease"
+                      onclick="updateQuantity(this, -1)"
+                    >
+                      -
+                    </button>
+                    <span class="cart__quantity">1</span>
+                    <button
+                      class="cart__button cart__button--increase"
+                      onclick="updateQuantity(this, 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </td>
+                <td class="cart__cell  cart__cell--total">000</td>
+                <td
+                  class="cart__cell cart__cell--custom-padding  cart__cell--remove"
+                  onclick="removeItem(this)"
                 >
-                  -
-                </button>
-                <span class="cart__quantity">1</span>
-                <button
-                  class="cart__button cart__button--increase"
-                  onclick="updateQuantity(this, 1)"
-                >
-                  +
-                </button>
-              </td>
-              <td class="cart__cell cart__cell--total">000</td>
-              <td
-                class="cart__cell cart__cell--remove"
-                onclick="removeItem(this)"
-              >
-                ❌
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                  ❌
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  </section>
-
-
-
-
+    </section>
   </body>
 </html>
