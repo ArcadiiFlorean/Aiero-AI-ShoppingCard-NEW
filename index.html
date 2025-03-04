@@ -196,17 +196,17 @@
           <table class="cart">
             <thead class="cart__header">
               <tr class="cart__row">
-                <th class="cart__cell cart__cell--header">Products</th>
+                <th class="cart__cell cart__cell--product cart__cell--header">
+                  Product
+                </th>
                 <th class="cart__cell cart__cell--header">Price</th>
                 <th class="cart__cell cart__cell--header">Quantity</th>
                 <th class="cart__cell cart__cell--header">Total</th>
-          
+                <th class="cart__cell cart__cell--header">Remove</th>
               </tr>
-              <td class="colspan" colspan="5">
-                <hr />
-              </td>
             </thead>
             <tbody id="cart-body" class="cart__body">
+              <td colspan="5"><hr /></td>
               <tr class="cart__row">
                 <td class="cart__cell cart__cell--product">
                   <div class="cart__product-info">
@@ -215,49 +215,123 @@
                       src="./imag/Produs_img.png"
                       alt="produs_img"
                     />
-
                     <div class="cart__product-details">
                       <span class="cart__product-name">Sneakers REDdy XL</span>
-                      <div class="cart__rating" onclick="setRating(this)">
-                        <span class="cart__star">&#9733;</span>
-                        <span class="cart__star">&#9733;</span>
-                        <span class="cart__star">&#9733;</span>
-                        <span class="cart__star">&#9733;</span>
-                        <span class="cart__star">&#9733;</span>
+                      <div class="cart__rating">
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
                       </div>
                     </div>
                   </div>
                 </td>
                 <td class="cart__cell cart__cell--price">$150.00</td>
                 <td class="cart__cell cart__cell--quantity">
-                  <div class="card__cell__btn">
+                  <div class="cart__quantity-btn">
                     <button
-                      class="cart__button cart__button--decrease"
+                      class="cart__btn cart__btn--decrease"
                       onclick="updateQuantity(this, -1)"
                     >
                       -
                     </button>
                     <span class="cart__quantity">1</span>
                     <button
-                      class="cart__button cart__button--increase"
+                      class="cart__btn cart__btn--increase"
                       onclick="updateQuantity(this, 1)"
                     >
                       +
                     </button>
                   </div>
                 </td>
-                <td class="cart__cell  cart__cell--total">000</td>
-                <td
-                  class="cart__cell cart__cell--custom-padding  cart__cell--remove"
-                  onclick="removeItem(this)"
-                >
-                  ❌
+                <td class="cart__cell cart__cell--total">$150.00</td>
+                <td class="cart__cell cart__cell--remove">
+                  <button
+                    class="cart__button-remove"
+                    onclick="removeItem(this)"
+                  >
+                    ❌
+                  </button>
                 </td>
               </tr>
+              <tr>
+                <td colspan="5"><hr /></td>
+              </tr>
+              <tr class="cart__row">
+                <td class="cart__cell cart__cell--product">
+                  <div class="cart__product-info">
+                    <img
+                      class="cart__product-img"
+                      src="./imag/Produs_img.png"
+                      alt="produs_img"
+                    />
+                    <div class="cart__product-details">
+                      <span class="cart__product-name">Sneakers REDdy XL</span>
+                      <div class="cart__rating">
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                        <span class="cart__star" onclick="setRating(this)"
+                          >&#9733;</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart__cell cart__cell--price">$150.00</td>
+                <td class="cart__cell cart__cell--quantity">
+                  <div class="cart__quantity-btn">
+                    <button
+                      class="cart__btn cart__btn--decrease"
+                      onclick="updateQuantity(this, -1)"
+                    >
+                      -
+                    </button>
+                    <span class="cart__quantity">1</span>
+                    <button
+                      class="cart__btn cart__btn--increase"
+                      onclick="updateQuantity(this, 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </td>
+                <td class="cart__cell cart__cell--total">$150.00</td>
+                <td class="cart__cell cart__cell--remove">
+                  <button
+                    class="cart__button-remove"
+                    onclick="removeItem(this)"
+                  >
+                    ❌
+                  </button>
+                </td>
+              </tr>
+              <td colspan="5"><hr /></td>
             </tbody>
           </table>
         </div>
       </div>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
