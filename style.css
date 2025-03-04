@@ -388,7 +388,6 @@ input::placeholder {
 }
 #card,
 #subtotal,
-#sale,
 #total {
   font-family: var(--second-family);
   font-weight: 400;
