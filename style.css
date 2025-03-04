@@ -182,7 +182,7 @@
   background: linear-gradient(135deg, #45d0bd 0%, #44b6e9 100%);
 }
 
-.hero-title{
+.hero-title {
   font-size: 5rem;
 }
 
@@ -198,6 +198,7 @@ background: #fefeff;
 
 table {
   width: 100%;
+  margin-bottom: 89px;
 }
 
 th,
@@ -243,6 +244,7 @@ td {
 .cart__star {
   cursor: pointer;
   color: #ccc;
+  font-size: 30px;
 }
 .cart__star.active {
   color: gold;
@@ -251,7 +253,13 @@ td {
 .cart__cell {
   padding: 15px;
   text-align: center; /* Aliniere la centru */
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 194%;
+  color: #111;
 }
+
 .cart__product-details {
   min-width: 241px;
   margin-right: 38px;
@@ -293,10 +301,65 @@ td {
   color: red;
 }
 /*butons coupon-send-update*/
-.coupon-send-update{
+.coupon-send-update {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1341px;
-  margin: 0 auto
+  margin: 0 auto;
+}
+
+#coupon-code {
+  border: 1px solid #adadad;
+  border-radius: 20px;
+  width: 307px;
+  height: 50px;
+  background: #fff;
+}
+input::placeholder {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+#send-message {
+  width: 171px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  background: linear-gradient(to right, #45d0bd, #44b6e9);
+  transition: background-image 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+#send-message:hover {
+  background: linear-gradient(to right, #44b6e9, #45d0bd);
+  color: white;
+}
+
+#update-card {
+  width: 171px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  background: linear-gradient(to right, #45d0bd, #44b6e9);
+  transition: background-image 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+#update-card:hover {
+  background: linear-gradient(to right, #44b6e9, #45d0bd);
+  color: white;
 }
