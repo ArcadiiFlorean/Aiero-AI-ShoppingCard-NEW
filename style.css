@@ -175,6 +175,25 @@
   ); /* Poți adăuga un efect la hover, de exemplu, mișcarea iconiței */
 }
 
+/*HERO-SECTION*/
+
+.hero {
+  border-radius: 25px;
+  background: linear-gradient(135deg, #45d0bd 0%, #44b6e9 100%);
+}
+
+.hero-title{
+  font-size: 5rem;
+}
+
+/* .patrat{
+position: relative;
+top: 550px;
+  border-radius: 25px 25px 25px 7px;
+width: 309px;
+height: 147px;
+background: #fefeff;
+} */
 /*table*/
 
 table {
@@ -227,7 +246,6 @@ td {
 }
 .cart__star.active {
   color: gold;
-  
 }
 
 .cart__cell {
@@ -273,4 +291,12 @@ td {
   cursor: pointer;
   font-size: 1.5rem;
   color: red;
+}
+/*butons coupon-send-update*/
+.coupon-send-update{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1341px;
+  margin: 0 auto
 }

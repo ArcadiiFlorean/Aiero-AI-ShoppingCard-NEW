@@ -189,6 +189,41 @@
         </div>
       </div>
     </header>
+    <section class="section-hero">
+      <div class="container">
+        <div class="hero">
+          <h1 class="hero-title">Design Figma like this</h1>
+          <!-- <div class="patrat"></div> -->
+          <svg
+            width="1893"
+            height="541"
+            viewBox="0 0 1893 541"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.3"
+              d="M0 8.00977C0 -5.79735 11.1929 -16.9902 25 -16.9902H1882C1895.81 -16.9902 1907 -5.79735 1907 8.00977V518.01C1907 531.817 1895.81 543.01 1882 543.01H25.0001C11.1929 543.01 0 531.817 0 518.01V8.00977Z"
+              fill="url(#paint0_linear_2542_6137)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_2542_6137"
+                x1="44.2882"
+                y1="3.2221"
+                x2="902.268"
+                y2="1222.51"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#45D0BD" />
+                <stop offset="1" stop-color="#44B6E9" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
     <!--------Table------>
     <section class="section-shoping-card">
       <div class="container">
@@ -237,7 +272,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="cart__cell cart__cell--price">$150.00</td>
+                <td class="cart__cell cart__cell--price">$149.00</td>
                 <td class="cart__cell cart__cell--quantity">
                   <div class="cart__quantity-btn">
                     <button
@@ -255,7 +290,9 @@
                     </button>
                   </div>
                 </td>
-                <td class="cart__cell cart__cell--total">$150.00</td>
+                <td class="cart__cell cart__cell--total">
+                  $<span class="cart__total-price">149.00</span>
+                </td>
                 <td class="cart__cell cart__cell--remove">
                   <button
                     class="cart__button-remove"
@@ -298,7 +335,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="cart__cell cart__cell--price">$150.00</td>
+                <td class="cart__cell cart__cell--price">$99.00</td>
                 <td class="cart__cell cart__cell--quantity">
                   <div class="cart__quantity-btn">
                     <button
@@ -316,7 +353,9 @@
                     </button>
                   </div>
                 </td>
-                <td class="cart__cell cart__cell--total">$150.00</td>
+                <td class="cart__cell cart__cell--total">
+                  $<span class="cart__total-price">99.00</span>
+                </td>
                 <td class="cart__cell cart__cell--remove">
                   <button
                     class="cart__button-remove"
@@ -329,6 +368,13 @@
               <td colspan="5"><hr /></td>
             </tbody>
           </table>
+        </div>
+        <div class="coupon-send-update">
+          <form action="submit_coupon.php" method="POST">
+            <input type="text" id="coupon-code" name="coupon_code" required />
+            <button type="submit">Apply Coupon</button>
+          </form>
+          <button type="submit">Update Card</button>
         </div>
       </div>
     </section>
